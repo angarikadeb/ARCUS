@@ -6,7 +6,8 @@ $var2 = $_POST['var2'];
 $command = escapeshellcmd('python ../../data/getPaths.py '.escapeshellarg($var1)." ".escapeshellarg($var2));
 $output = exec($command);
 
-$pdo = new PDO('sqlite:../../data/db/ARCUS.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql= "
 SELECT l.pk,

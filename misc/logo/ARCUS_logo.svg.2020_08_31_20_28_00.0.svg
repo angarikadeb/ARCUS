@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="ARCUS_logo.svg"
+   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 141.70833 176.61432"
+   height="176.61432mm"
+   width="141.70833mm"
+   inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo_big.png"
+   inkscape:export-xdpi="72.57"
+   inkscape:export-ydpi="72.57">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="1035"
+     inkscape:window-width="1920"
+     fit-margin-bottom="5"
+     fit-margin-right="5"
+     fit-margin-left="5"
+     fit-margin-top="5"
+     inkscape:snap-global="false"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="427.62656"
+     inkscape:cx="203.21711"
+     inkscape:zoom="0.79018659"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-51.23214,-35.35714)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <circle
+       r="60.854164"
+       cy="106.2113"
+       cx="122.0863"
+       id="path10"
+       style="fill:#ffd6b3;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo.png"
+       inkscape:export-xdpi="72.57"
+       inkscape:export-ydpi="72.57" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path843"
+       d="m 79.306249,204.63566 h 9.502093 L 72.825714,176.25775 56.843088,204.63566 h 9.502081 l 6.305835,-11.33423 z"
+       style="fill:#f97200;fill-opacity:1;stroke:#f97200;stroke-width:0.33033px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#f97200;fill-opacity:1;stroke:#f97200;stroke-width:0.33033px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105.41595,185.01986 4.75104,-8.22905 -32.567276,-0.3476 16.584679,28.03031 4.75104,-8.22904 -6.66281,-11.12813 z"
+       id="path875"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path877"
+       d="m 126.86359,184.49505 v -8.48279 l -25.33374,14.26814 25.33374,14.26816 v -8.48279 l -10.11838,-5.6294 z"
+       style="fill:#f97200;fill-opacity:1;stroke:#f97200;stroke-width:0.294894px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:#f97200;fill-opacity:1;stroke:#f97200;stroke-width:0.33033px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 139.11208,176.08635 h -9.50211 l 15.98264,28.3779 15.98263,-28.3779 h -9.50208 l -6.30585,11.33421 z"
+       id="path879"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#ff7908;fill-opacity:1;stroke:#f97200;stroke-width:0.233289px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 180.80757,179.23501 -0.0952,-6.71 -19.87922,11.57058 20.19947,11.00197 -0.0952,-6.70999 -8.06696,-4.33937 z"
+       id="path889"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path891"
+       d="m 167.4,200.06025 0.0952,6.71001 19.87923,-11.57059 -20.19947,-11.00197 0.0952,6.70998 8.06695,4.33936 z"
+       style="fill:#d26000;fill-opacity:1;stroke:#d26000;stroke-width:0.233289px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path901"
+       d="m 146.44597,124.642 v 9.14809 l 27.3207,-15.38719 -27.3207,-15.3872 v 9.14808 l 10.91198,6.07091 z"
+       style="fill:#000000;stroke:#000000;stroke-width:0.318023px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo.png"
+       inkscape:export-xdpi="72.57"
+       inkscape:export-ydpi="72.57" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.0747;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect905"
+       width="44.506218"
+       height="12.18695"
+       x="99.833199"
+       y="111.96615"
+       ry="0"
+       inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo.png"
+       inkscape:export-xdpi="72.57"
+       inkscape:export-ydpi="72.57" />
+    <rect
+       ry="0"
+       y="89.248238"
+       x="99.833199"
+       height="12.18695"
+       width="44.506218"
+       id="rect911"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:12.0747;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo.png"
+       inkscape:export-xdpi="72.57"
+       inkscape:export-ydpi="72.57" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.318023px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 97.862114,88.644072 v -9.14809 l -27.3207,15.38719 27.3207,15.387198 v -9.14808 l -10.91198,-6.070908 z"
+       id="path913"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/Users/sgroberts/Documents/Bristol/ARCUS/ARCUSOnline/app/Site/images/ARCUS_logo.png"
+       inkscape:export-xdpi="72.57"
+       inkscape:export-ydpi="72.57" />
+  </g>
+</svg>

@@ -1,6 +1,7 @@
 <?php
 
-$pdo = new PDO('sqlite:../../data/db/ARCUS.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql= "SELECT version, gitRevision FROM version LIMIT 1";
 

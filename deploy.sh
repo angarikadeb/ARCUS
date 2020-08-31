@@ -71,10 +71,10 @@ then
 	echo "Zipping publicly downloadable files ..."
 	# Zip the downloadable csv files to the downloads folder
 	# direct to the server (avoid adding it to the local folder, it upsets git)
-	zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
+	zip app/Site/downloads/ARCUS_csv.zip data/db/*.csv
 
 	# Zip the sqlite database and add to downloads
-	zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
+	zip app/Site/downloads/ARCUS.zip data/db/ARCUS.sqlite
 fi
 
 
@@ -91,8 +91,8 @@ chown _www ${server_private_folder}processedRecords
 
 # sudo chmod 755 *.php
 # Remove zip files (to reduce git overhead)
-rm app/Site/downloads/CHIELD_csv.zip
-rm app/Site/downloads/CHIELD.zip
+rm app/Site/downloads/ARCUS_csv.zip
+rm app/Site/downloads/ARCUS.zip
 
 # Need to update the python path for php to work
 sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewRecord.php
