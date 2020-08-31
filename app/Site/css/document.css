@@ -1,0 +1,28 @@
+#quoteDiv {
+	position: fixed;
+	top: 20%;
+	left:20%;
+	width: 50%;
+	display: none;
+			}
+#quoteDivText {
+	width: 90%;
+}
+
+#quoteDivClose {
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+
+#bibtexsource {
+	width: 60%;
+}
+
+#mynetwork{
+	border-style: solid;
+	border: "red";
+	height: 400px;
+	width: 90%;
+	margin-left:5%;
+}

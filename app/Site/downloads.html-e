@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIELD: Downloads</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#header").load("header.html", function(){
+    $("#DownloadsHREF").addClass("active");
+  }); 
+
+});
+</script>
+
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="container">
+<h2>Downloads</h2>
+<p>Download the database tables in <a href="downloads/CHIELD_csv.zip">csv format</a>.
+<p>Download the database as an <a href="downloads/CHIELD.zip">SQLite database</a>.
+<br />
+<p>Download the <a href="downloads/CausalLinks_Template.csv">causal links template file</a> (see the <a href="Help_AddingData.html">help page</a>).
+<br />
+<p>Source code and archive available <a href="https://github.com/CHIELDOnline/CHIELD">via github</a>.
+<br /><br />
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+</div>
+</html>

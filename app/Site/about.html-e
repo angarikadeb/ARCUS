@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>CHIELD: About</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+
+<script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/contributors.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#header").load("header.html", function(){
+    $("#AboutHREF").addClass("active");
+  }); 
+
+});
+</script>
+
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="container">
+<h2>Causal Hypotheses in Evolutionary Linguistics Database</h2>
+<p> CHIELD is a searchable database of causal hypotheses in evolutionary linguistics.  It is currently being developed by <a href="http://research-information.bristol.ac.uk/en/persons/sean-g-roberts(2399cd4d-b514-405d-986c-5d0d72d390f0).html">Sean Roberts</a>.
+
+<h4>Contributors</h4>
+Below is a list of researchers who have contributed to CHIELD.  You can contribute to CHIELD by <a href="addData.html">adding data</a>.
+</br>
+<table id="contributors_table" class="table table-striped table-bordered">
+  <thead>
+    <th>Contributor</th>
+    <th>Number of documents</th>
+  </thead>
+  <tfoot>
+    <th>Contributor</th>
+    <th>Number of documents</th>
+  </tfoot>
+  <tbody>
+  </tbody>
+</table>
+<br />
+<hr>
+<br />
+<h4>Citation</h4>
+<p>If you use CHIELD, please cite:
+
+<p>Roberts, S., Killin, A., Deb, A., Sheard, C., Greenhill, S. J., Sinnemäki, K, Segovia-Martín, J, Nölle, J., Berdicevskis, A., Humphreys-Balkwill, A., Little, H., Opie, C., Jacques, G., Bromham, L., Tinits, P., Ross, R. M., Lee, S., Gasser, E., Calladine, J., Spike, M., Mann, S. F., Shcherbakova, O., Singer, R., Zhang, S. , Benítez-Burraco, A., Kliesch, C., Thomas-Colquhoun, E., Skirgård, H., Tamariz, M., Passmore, S., Pellard, T. & Jordan, F. (2020) CHIELD: The causal hypotheses in Evolutionary Linguistics Database. Journal of Language Evolution, 5:2. https://doi.org/10.1093/jole/lzaa001.
+
+<h5>Bibtex source:</h5>
+<p><textarea style="width:100%" rows="4">
+@article{10.1093/jole/lzaa001,
+    author = {Roberts, Seán G and Killin, Anton and Deb, Angarika and Sheard, Catherine and Greenhill, Simon J and Sinnemäki, Kaius and Segovia-Martín, José and Nölle, Jonas and Berdicevskis, Aleksandrs and Humphreys-Balkwill, Archie and Little, Hannah and Opie, Christopher and Jacques, Guillaume and Bromham, Lindell and Tinits, Peeter and Ross, Robert M and Lee, Sean and Gasser, Emily and Calladine, Jasmine and Spike, Matthew and Mann, Stephen Francis and Shcherbakova, Olena and Singer, Ruth and Zhang, Shuya and Benítez-Burraco, Antonio and Kliesch, Christian and Thomas-Colquhoun, Ewan and Skirgård, Hedvig and Tamariz, Monica and Passmore, Sam and Pellard, Thomas and Jordan, Fiona},
+    title = "{CHIELD: the causal hypotheses in evolutionary linguistics database}",
+    journal = {Journal of Language Evolution},
+    year = {2020},
+    month = {04},
+    abstract = "{Language is one of the most complex of human traits. There are many hypotheses about how it originated, what factors shaped its diversity, and what ongoing processes drive how it changes. We present the Causal Hypotheses in Evolutionary Linguistics Database (CHIELD, https://chield.excd.org/), a tool for expressing, exploring, and evaluating hypotheses. It allows researchers to integrate multiple theories into a coherent narrative, helping to design future research. We present design goals, a formal specification, and an implementation for this database. Source code is freely available for other fields to take advantage of this tool. Some initial results are presented, including identifying conflicts in theories about gossip and ritual, comparing hypotheses relating population size and morphological complexity, and an author relation network.}",
+    issn = {2058-458X},
+    doi = {10.1093/jole/lzaa001},
+    url = {https://doi.org/10.1093/jole/lzaa001},
+    note = {lzaa001},
+    eprint = {https://academic.oup.com/jole/article-pdf/doi/10.1093/jole/lzaa001/33107754/lzaa001.pdf},
+}
+</textarea>
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+
+</div>
+</html>

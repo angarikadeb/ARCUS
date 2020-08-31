@@ -1,0 +1,58 @@
+{
+	"label" : "Topics",
+	"expanded" : "true",
+	"children" : [
+		{
+			"label" : "Humanities",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Languages and literature",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Linguistics",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Bilingualism"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Social sciences",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Economics",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Behavioural economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cooperation"
+						}
+					]
+				},
+				{
+					"label" : "Psychology",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Behavioural psychology"
+						}
+					]
+				}
+			]
+		}
+	]
+}

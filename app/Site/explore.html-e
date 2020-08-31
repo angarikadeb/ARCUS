@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIELD: Explore</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/explore.css"/>
+
+<script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/visualisation/GUI_for_explore.js"></script>
+<script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDagitty.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToPhylopath.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToBRMS.js"></script>
+<script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
+<script type="text/javascript" src="js/explore.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="loader"></div> 
+
+<button id="networkSettingsButton" class="btn btn-danger">
+  <i class="fas fa-wrench"></i>
+</button>
+<div id="networkSettings" class="container">
+  <h5>Network Options</h4>
+</div>
+
+<h3 id="exploreTitle">Explore</h3>
+
+<div id="mynetwork"></div>
+
+<div id="controlPanel">
+  <div class="btn-group-vertical">
+
+    <div class="btn-group">
+        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a id="expandVariable" class="dropdown-item" href="#">Expand links from selected nodes</a>
+          <a id="completeDocuments" class="dropdown-item" href="#">Add all links from currently displayed documents</a>
+          <a id="findPaths" class="dropdown-item" href="#">Find causal paths between two selected nodes</a>
+          <a id="bulkOut" class="dropdown-item" href="#">Find supporting evidence for the current links</a>
+          <a class="dropdown-item" href="#" onclick="clusterByGroup()">Cluster nodes</a>
+          <a class="dropdown-item" href="#" onclick="highlightConflictingEdges()">Hilight conflicting edges</a>
+          <a id="fit" class="dropdown-item" href="#" >Fit the network within the window</a>
+          <!--<a id="viewAll" class="dropdown-item" href="#">View the whole network (can be very slow)</a>-->    
+        </div>
+    </div>
+
+    <div class="btn-group dropdown">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Colours
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('causal')">Causal</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('cor')">Correlation</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('type')">Type</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('stage')">Stage</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('document')">Document</a>
+      </div>
+    </div>
+
+    <div class="btn-group">
+        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-download"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true)">DOT (with positions)</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT(false,true,true)">DOT (via GraphvizOnline)</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDagitty()">DAGitty</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsPhylopath()">Phylopath</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsBRMS()">brms</a>
+        </div>
+    </div>
+
+  </div>
+
+
+  <br /><br />
+  <input id="searchVariablesToAdd" placeholder="Search variables" autofocus></input>
+  <br /><br />
+  <div class="btn-group-vertical">
+
+    <button id="addVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Add a node">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <button id="removeVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Remove the selected nodes">
+        <i class="fas fa-minus"></i>
+    </button>
+    <button id="addDoc" class="btn btn-danger"  data-toggle="tooltip" data-placement="left" title="Add links from a document">
+      Add doc
+    </button>
+  </div>
+  <br />
+  <input id="searchDocsToAdd" placeholder="Search documents" autofocus></input>
+  <br />
+
+</div>
+
+
+
+<div id="legend">
+  <h5 id="legendTitle">Legend</h5>
+  <a id="closeLegendButton" href="#" class="close" aria-label="close" onclick="hideLegend()">&times;</a>
+  <div id="legendItems"></div>
+</div>
+<button id="legendButton" class="btn btn-danger" onclick="showLegend()"><i class="fas fa-bars"></i></button>
+
+
+
+<div class="container-fluid" id="links">
+  <button id="toggleTableButton" class="btn btn-danger">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <div id="links_table_container">
+  <table id="links_table" class="table table-striped table-bordered">
+    <thead>
+      <th>pk</th>
+      <th>Variable 1</th>
+      <th>Relation</th>
+      <th>Variable 2</th>
+      <th>Cor</th>
+      <th>Stage</th>
+      <th>Type</th>
+      <th>Reference</th>
+      <th>citekey</th>
+      <th>Confirmed</th>
+    </thead>
+    <tfoot>
+      <th>pk</th>
+      <th>Variable 1</th>
+      <th>Relation</th>
+      <th>Variable 2</th>
+      <th>Cor</th>
+      <th>Stage</th>
+      <th>Type</th>
+      <th>Reference</th>
+      <th>citekey</th>
+      <th>Confirmed</th>
+    </tfoot>
+    <tbody>
+    </tbody>
+  </table>
+  <div>
+</div>
+</html>
