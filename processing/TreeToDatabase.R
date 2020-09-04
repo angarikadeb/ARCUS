@@ -10,6 +10,7 @@ suppressWarnings(suppressMessages(library(readr)))
 suppressWarnings(suppressMessages(library(crayon)))
 
 try(setwd("~/Documents/Bristol/ARCUS/ARCUSOnline/processing/"))
+try(setwd("C:\Users\admin\Desktop\Amazing Angarika\ARCUS-master\processing"))
 
 source("detexify.R")
 
@@ -94,6 +95,7 @@ getShortCitation = function(b){
 }
 
 getVersion = function(){
+  return("0000")
   gitRevision = system("git rev-parse HEAD",intern = T)
   ARCUS.version = readLines("../version.txt")
   return(data.frame(version=ARCUS.version,
