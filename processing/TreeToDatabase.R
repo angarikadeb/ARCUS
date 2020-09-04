@@ -383,4 +383,4 @@ dbWriteTable(my_db2, "authors",authors, overwrite=T)
 dbWriteTable(my_db2, "version",version, overwrite=T)
 dbDisconnect(my_db2)
 
-
+try(file.copy(my_db_file, "C:/Users/admin/Downloads/ARCUS.sqlite"))
