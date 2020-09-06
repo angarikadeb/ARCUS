@@ -95,8 +95,11 @@ getShortCitation = function(b){
 }
 
 getVersion = function(){
-  return("0000")
-  gitRevision = system("git rev-parse HEAD",intern = T)
+  gitRevision = try(system("git rev-parse HEAD",intern = T))
+  if("class" %in% names(attributes(gitRevision))){
+    # error, so make up
+    gitRevision = "abcde"
+  }
   ARCUS.version = readLines("../version.txt")
   return(data.frame(version=ARCUS.version,
                     gitRevision = gitRevision))
