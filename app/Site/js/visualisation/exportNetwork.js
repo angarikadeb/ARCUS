@@ -97,7 +97,7 @@ function saveDataAsBRMS(){
 
 function getExploreLink(){
 	return(
-		"https://chield.excd.org/explore.html?links=" + 
+		"https://correlation-machine.com/ARCUS/explore.html?links=" + 
 			network_edges.getIds().join(",")
 			);
 }
