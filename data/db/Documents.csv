@@ -27,6 +27,16 @@
   year = {1994},
   publisher = {University of Chicago Press},
 }","Lennon & Rosenfield (1994)"
+"knez1995outside","Marc J Knez; Colin F Camerer","1995","Outside Options and Social Comparison in Three-Player Ultimatum Game Experiments","@Article{knez1995outside,
+  title = {Outside Options and Social Comparison in Three-Player Ultimatum Game Experiments},
+  author = {Marc J Knez and Colin F Camerer},
+  journal = {Games and Economic Behavior},
+  volume = {10},
+  number = {1},
+  pages = {65--94},
+  year = {1995},
+  publisher = {Elsevier},
+}","Knez & Camerer (1995)"
 "greenstein2000economic","Theodore N Greenstein","2000","Economic dependence, gender, and the division of labor in the home: A replication and extension","@Article{greenstein2000economic,
   title = {Economic dependence, gender, and the division of labor in the home: A replication and extension},
   author = {Theodore N Greenstein},
@@ -87,8 +97,8 @@
   year = {2008},
   publisher = {Elsevier},
 }","Charness & Gneezy (2008)"
-"knudsen2008national","Knud Knudsen; Kari Wærness","2008","National context and spouses’ housework in 34 countries","@Article{knudsen2008national,
-  title = {National context and spouses’ housework in 34 countries},
+"knudsen2008national","Knud Knudsen; Kari Wærness","2008","National context and spousesâ€™ housework in 34 countries","@Article{knudsen2008national,
+  title = {National context and spousesâ€™ housework in 34 countries},
   author = {Knud Knudsen and Kari Wærness},
   journal = {European Sociological Review},
   volume = {24},
